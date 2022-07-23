@@ -45,6 +45,8 @@ export class CoursesComponent{
     }
   ]
 
+  courseCountRadioButton:string = 'All';
+
   getTotalCourses(){
     return this.courses.length;
   }
@@ -55,7 +57,6 @@ export class CoursesComponent{
     return this.courses.filter(course => course.type === 'Premium').length;
   }
 
-  courseCountRadioButton: string = 'All';
   searchText: string = '';
 
   onFilterRadioButtonChanged(data: string){
