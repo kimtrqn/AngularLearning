@@ -61,7 +61,7 @@ export class CoursesComponent{
 
   onFilterRadioButtonChanged(data: string){
     this.courseCountRadioButton = data;
-    //console.log(this.courseCountRadioButton);
+    console.log(data)
   }
 
   onSearchTextEntered(searchValue: string){
